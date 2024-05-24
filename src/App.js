@@ -1,15 +1,14 @@
 import React from 'react';
-import { TodoCounter } from './TodoCounter';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
-
+import { TodoCounter } from './TodoCounter/TodoCounter';
+import { TodoSearch } from './TodoSearch/TodoSearch';
+import { TodoList } from './TodoList/TodoList';
+import { TodoItem } from './TodoItem/TodoItem';
+import { CreateTodoButton } from './TodoButton/CreateTodoButton';
 
 const defaultTodos = [
   { text: 'Cortar cebolla', completed: true },
   { text: 'Tomar el curso de intro de react', completed: false },
-  { text: 'Subir a diamante en valo', completed: true },
+  { text: 'Subir a diamante en valorant', completed: true },
   { text: 'Dormir', completed: false }
 ];
 

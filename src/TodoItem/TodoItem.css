@@ -1,0 +1,36 @@
+/* TodoItem.css */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #f9f9f9; /* Color de fondo */
+  border: 1px solid #ddd; /* Borde */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f1f1f1; /* Fondo al pasar el ratón */
+}
+
+.todo-item span {
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.todo-item span:first-child {
+  color: #4CAF50; /* Color para el primer span (por ejemplo, el de completar) */
+}
+
+.todo-item span:last-child {
+  color: #F44336; /* Color para el último span (por ejemplo, el de eliminar) */
+}
+
+.todo-item p {
+  margin: 0;
+  padding: 0 10px;
+  flex-grow: 1; /* Para que el párrafo ocupe el espacio disponible */
+  text-align: left; /* Texto alineado a la izquierda */
+}
