@@ -1,36 +1,51 @@
-/* TodoItem.css */
-.todo-item {
+.TodoItem {
+  background-color: #fafafa;
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 10px 20px;
-  margin: 10px 0;
-  background-color: #f9f9f9; /* Color de fondo */
-  border: 1px solid #ddd; /* Borde */
-  border-radius: 5px; /* Bordes redondeados */
-  transition: background-color 0.3s ease;
+  margin-top: 24px;
+  box-shadow: 0 5px 50px rgba(32, 35, 41, 0.15);
 }
 
-.todo-item:hover {
-  background-color: #f1f1f1; /* Fondo al pasar el ratón */
+.TodoItem-p {
+  margin: 24px 0 24px 24px;
+  width: calc(100% - 120px);
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
 }
 
-.todo-item span {
+.TodoItem-p--complete {
+  text-decoration: line-through;
+}
+
+.Icon {
   cursor: pointer;
-  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: 700;
 }
 
-.todo-item span:first-child {
-  color: #4CAF50; /* Color para el primer span (por ejemplo, el de completar) */
+.Icon-check {
+  position: absolute;
+  left: 12px;
 }
 
-.todo-item span:last-child {
-  color: #F44336; /* Color para el último span (por ejemplo, el de eliminar) */
+.Icon-check--active {
+  color: #4caf50;
 }
 
-.todo-item p {
-  margin: 0;
-  padding: 0 10px;
-  flex-grow: 1; /* Para que el párrafo ocupe el espacio disponible */
-  text-align: left; /* Texto alineado a la izquierda */
+.Icon-delete {
+  position: absolute;
+  top: -24px;
+  right: 0;
+}
+
+.Icon-delete:hover {
+  color: red;
 }

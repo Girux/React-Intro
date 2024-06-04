@@ -8,7 +8,7 @@ import { CreateTodoButton } from './TodoButton/CreateTodoButton';
 const defaultTodos = [
   { text: 'Cortar cebolla', completed: true },
   { text: 'Tomar el curso de intro de react', completed: false },
-  { text: 'Subir a diamante en valorant', completed: true },
+  { text: 'Subir a diamante en valorant', completed: false },
   { text: 'Dormir', completed: false }
 ];
 

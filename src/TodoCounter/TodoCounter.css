@@ -1,11 +1,11 @@
 .TodoCounter {
-  font-family: 'Arial', sans-serif;
+  font-size: 24px;
   text-align: center;
-  margin-top: 20px;
+  margin: 0;
+  padding: 48px;
+  font-weight: normal;
 }
 
-.TodoCounter h1 {
-  color: #333;
-  font-size: 24px;
-  margin: 0;
+.TodoCounter span {
+  font-weight: bold;
 }
