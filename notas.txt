@@ -28,3 +28,5 @@ RESUMEN DE CLASE
 Para agregar estilos se debe tener una variable por fuera del componente en forma de objetos, utilizando los nombres de CSS con camelCase o directamente enviarle el objeto al componente.
 
 Se usan las comillas invertidas junto con las llaves para indicarle a react que vamos a trabajar con codigo de js: {`${code}`}
+
+Los estados derivados son variables/calculos que hacemos a partir de un estado(un estado puede cambiar todo el tiempo)

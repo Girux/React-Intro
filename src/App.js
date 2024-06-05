@@ -13,12 +13,27 @@ const defaultTodos = [
 ];
 
 function App() {
+  //Estados
+  const [todos, setTodos] = React.useState(defaultTodos);
+  const [searchValue, setSearchValue] = React.useState('');
+
+  const completedTodos = todos.filter(todo => !!todo.completed).length;
+  //La doble negación es para saber si son valores booleanos.
+  const totalTodos = todos.length;
+
+  console.log('Usuarios buscan TODOS de ' + searchValue);
   return (
     // <react.fragment>
     <>
  {/* Insertar/retornar un componente de react dentro de otro componente de react */}
-      <TodoCounter completed={16} total={25}/>
-      <TodoSearch />
+      <TodoCounter 
+      completed={completedTodos} 
+      total={totalTodos}
+      />
+      <TodoSearch 
+      searchValue={searchValue}
+      setSearchValue={setSearchValue}
+      />
      
       <TodoList>
         {defaultTodos.map(todo =>(
