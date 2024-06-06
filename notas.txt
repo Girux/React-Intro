@@ -30,3 +30,4 @@ Para agregar estilos se debe tener una variable por fuera del componente en form
 Se usan las comillas invertidas junto con las llaves para indicarle a react que vamos a trabajar con codigo de js: {`${code}`}
 
 Los estados derivados son variables/calculos que hacemos a partir de un estado(un estado puede cambiar todo el tiempo)
+¿Cómo comunico informacion de mi estado entre componentes? .. Podemos comunicar informacion del "Estado" entre componentes utilizando las "props" pero hay que tener en cuenta que esa informacion la podemos compartir ++Solamente de "Componentes Padres a Componentes Hijos."++ Es decir, debemos declarar el "Estado" dentro del Componente Padre (En este caso App.js) para poder comunicarlo al componente hijo a través de "props" (TodoSearch.js)
